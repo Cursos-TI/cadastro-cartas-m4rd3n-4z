@@ -20,9 +20,11 @@ int main() {
     float pib2;                  // Pib em milhões (float)         
     int pontosTuristicos2;       // Número de pontos turísticos (int)
 
+
+//solicita que o usuário digite os dados das cartas para cadastro
 // Entrada de dados da carta 1
 
-    printf("Cadastro da Carta 1:\n");           //solicita que o usuário digite os dados da carta
+    printf("Cadastro da Carta 1:\n");           
     printf("Digite o Estado (A-H): ");
     scanf(" %C", &estado1);
     printf("Digite o Código da Carta (ex:A01): ");
@@ -56,6 +58,37 @@ int main() {
     scanf("%f", &pib2);
     printf("Digite o Numero de Pontos Turisticos: ");
     scanf("%d", &pontosTuristicos2);
+    printf("\n");
+
+//saida dos cados cadastrados de forma organizada
+
+//saída dos dados da carta 1
+
+    printf("=== Carta 1 ===\n");
+    printf("Estado: %c\n", estado1);
+    printf("Código: %s\n", codigo1);
+    printf("Nome da Cidade: %s\n", nomeCidade1);
+    printf("População: %d habitantes\n", populacao1);
+    printf("Área: %.2f km²\n", area1);
+    printf("Pib: %.2f milhões de reais\n", pib1);
+    printf("Númeor de Pontos Túristicos: %d\n", pontosTuristicos1);
+    printf("================\n\n");
+
+//saida dos dados da carta 2
+
+    printf("=== Carta 2 ===\n");
+    printf("Estado: %c\n", estado2);
+    printf("Código: %s\n", codigo2);
+    printf("Nome da Cidade: %s\n", nomeCidade2);
+    printf("População: %d habitantes\n", populacao2);
+    printf("Área: %.2f km²\n", area2);
+    printf("Pib: %.2f milhões de reais\n", pib2);
+    printf("Númeor de Pontos Túristicos: %d\n", pontosTuristicos2);
+    printf("================\n\n");
+
+    return 0;
+
+
 
 
 }
